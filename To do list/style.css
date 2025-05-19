@@ -1,0 +1,80 @@
+body {
+    background-image: url(imageCoffee.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    background-position: center center;
+}
+
+h1 {
+    font-size: 60px;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(to left, rgb(170, 75, 107), rgb(59, 141, 147)) text;
+}
+
+.header,
+.to_do_container
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.input_field {
+ 
+    height: 35px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    outline: 0px;
+    font-size: 35px;
+    color: #865c42;
+    outline: 0;
+    padding: 10px;
+    width: 40%;
+    border: none;
+}
+
+input::placeholder {
+
+    font-size: 30px;
+    color: #865c42;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+.submit_btn {
+    background: rgb(170, 75, 107);
+    border-style: none;
+    padding: 19px;
+
+
+}
+
+.to_do_list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    text-align: center;
+    padding-inline-start: 0
+}
+
+.addedToDo {
+    border-bottom: 1px solid rgb(240, 213, 187);
+    background-color: #91543d;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    width: 45%;
+    padding-top: 15px ;
+}
+
+.completed {
+    background-color: #ecae7e;
+    text-decoration: line-through;
+    transition: 2s;
+}
